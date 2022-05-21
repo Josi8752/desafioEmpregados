@@ -65,12 +65,12 @@ public class Department {
 	public Double payroll() {
 		double aux = 0.0;
 		for (Employee emp : employees) {
-		aux += emp.sum();
+		 aux += emp.getSalary();
 		}
 	return aux;
 	}
 
-	
+	@Override
 	public String toString() {
 		return  name  + payDay + employees + addres;
 	}

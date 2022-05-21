@@ -31,7 +31,7 @@ public class Addres {
 		this.phone = phone;
 	}
 
-	
+	@Override
 	public String toString() {
 		return  email + phone ;
 	}

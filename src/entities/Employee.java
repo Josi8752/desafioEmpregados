@@ -31,11 +31,9 @@ public void setSalary(Double salary) {
 	this.salary = salary;
 }
 
-public double sum() {
-	return salary ;
-}
 
 
+@Override
 public String toString() {
 	return name  ;
 }
