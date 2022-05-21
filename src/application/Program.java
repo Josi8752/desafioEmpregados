@@ -1,7 +1,5 @@
 package application;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -25,7 +23,7 @@ public class Program {
 		System.out.print("Telefone: ");
 		Integer phone = sc.nextInt();
 		Department dept = new Department(nameDepartment, payDay, new Addres(email, phone));
-Employee employees = null;
+		
 		System.out.print("Quantos funcionários tem o departamento? ");
 		int n = sc.nextInt();
 		String name;
@@ -37,14 +35,15 @@ Employee employees = null;
 			name = sc.nextLine();
 			System.out.print("Salário: ");
 			salary = sc.nextDouble();
-			dept.addEmployee(employees = new Employee (name , salary));
+			Employee employee = new Employee (name, salary);
+			dept.addEmployee(employee);
 			
 		}
 
 		showReport(dept);
 		sc.close();
 	}
-
+	
 	private static void showReport(Department dept) {
 		System.out.println();
 		System.out.println("FOLHA DE PAGAMENTO: ");

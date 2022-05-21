@@ -35,4 +35,10 @@ public double sum() {
 	return salary ;
 }
 
+
+public String toString() {
+	return name  ;
+}
+
+
 }

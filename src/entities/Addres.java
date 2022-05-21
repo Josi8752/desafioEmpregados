@@ -30,6 +30,11 @@ public class Addres {
 	public void setPhone(Integer phone) {
 		this.phone = phone;
 	}
+
+	
+	public String toString() {
+		return  email + phone ;
+	}
 	
 	
 }

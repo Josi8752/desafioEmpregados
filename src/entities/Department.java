@@ -65,9 +65,14 @@ public class Department {
 	public Double payroll() {
 		double aux = 0.0;
 		for (Employee emp : employees) {
-		aux = emp.sum();
+		aux += emp.sum();
 		}
 	return aux;
+	}
+
+	
+	public String toString() {
+		return  name  + payDay + employees + addres;
 	}
 
 	
